@@ -1,0 +1,238 @@
+
+<!-- saved from url=(0046)http://127.0.0.1:8000/leave/request_leave_data -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Sanergy</title>
+
+    
+  <link rel="stylesheet" type="text/css" href="./Sanergy_files/all.min.css">
+  <link href="./Sanergy_files/css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="./Sanergy_files/sb-admin-2.min.css">
+</head>
+<body>
+ <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Request Leave</h6>
+            </div>
+
+            <div class="card-body">
+              <div class="table-responsive">
+                   <form method="POST" action="http://127.0.0.1:8000/leave/request_leave_data">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead class="btn-info">
+                    <tr>
+                      <th>Leave Type</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Comments</th>
+                        <th>Submit</th>
+                    </tr>
+                  </thead>
+                    <tbody><tr>
+                      <td>
+                            <select id="leaves" name="leaves" class="form-control ">
+                              <option value="" selected="">--- select one ---</option>
+                              <option value="anual_leave" name="anual_leave">Anual Leave</option>
+                              <option value="sick_leave" name="sick_leave">Sick Leave</option>
+                              <option value="compassionate_leave" name="compassionate_leave">Compassionate Leave</option>
+                              <option value="exam_leave" name="examleave">Exam Leave</option>
+                            </select>
+                      </td>
+                        <td><input type="date" name="startdate" value="" class="form-control"></td>
+                        <td><input type="date" name="enddate" class="form-control" value=""></td>
+                        <td><input type="text" name="comments" value="" class="form-control "></td>
+                        <td><button type="submit" class="btn btn-info">View</button></td>
+                    </tr>
+
+                  </tbody>
+                </table>
+                   </form>
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Days selected</h6>
+            </div>
+                  <table class="table table-bordered " width="100%" cellspacing="0">
+                      <thead class="btn-info">
+                          <tr><th>Date</th>
+                          <th>Week day</th>
+                           <th>Half day</th>
+
+                      </tr></thead>
+                      <tbody>
+                      
+                      <tr class="btn-light">
+
+                         <td>2020-02-22</td>
+                         <td>Saturday</td>
+                          <td><input type="number" name="half_day" value="0" class="form-control"></td>
+
+                      </tr>
+                      
+                      <tr class="btn-light">
+
+                         <td>2020-02-23</td>
+                         <td>Sunday</td>
+                          <td><input type="number" name="half_day" value="0" class="form-control"></td>
+
+                      </tr>
+                      
+                      <tr class="btn-light">
+
+                         <td>2020-02-24</td>
+                         <td>Monday</td>
+                          <td><input type="number" name="half_day" value="0" class="form-control"></td>
+
+                      </tr>
+                      
+                      <tr class="btn-light">
+
+                         <td>2020-02-25</td>
+                         <td>Tuesday</td>
+                          <td><input type="number" name="half_day" value="0" class="form-control"></td>
+
+                      </tr>
+                      
+                      <tr class="btn-light">
+
+                         <td>2020-02-26</td>
+                         <td>Wednesday</td>
+                          <td><input type="number" name="half_day" value="0" class="form-control"></td>
+
+                      </tr>
+                      
+                      <tr class="btn-light">
+
+                         <td>2020-02-27</td>
+                         <td>Thursday</td>
+                          <td><input type="number" name="half_day" value="0" class="form-control"></td>
+
+                      </tr>
+                      
+                      <tr>
+
+                          <td><b>Leave Applied for: </b>sick_leave</td>
+
+                       <td><b>Your comments: </b></td>
+                      <td></td>
+                      </tr>
+                      
+                      </tbody></table>
+
+                      
+                      <table><tbody><tr><td><button type="submit" class="btn btn-info">Submit</button></td></tr></tbody></table>
+                  
+
+
+              </div>
+            </div>
+          </div>
+
+
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Leave History</h6>
+            </div>
+             <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead class="btn-info">
+                    <tr>
+                      <th>Leave Type</th>
+                      <th>Start Date</th>
+                      <th>End Date</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                        <th>Leave Type</th>
+                      <th>Start Date</th>
+                      <th>End Date</th>
+                      <th>Status</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td>Tiger Nixon</td>
+                      <td>System Architect</td>
+                      <td>Edinburgh</td>
+                      <td>61</td>
+                    </tr>
+
+                    
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          
+        
+        <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Leave Balances</h6>
+            </div>
+             <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead class="btn-info">
+                    <tr>
+                      <th>Leave Type</th>
+                      <th>Total days</th>
+                      <th>Days used</th>
+                      <th>Balance</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                       <th>Leave Type</th>
+                      <th>Total days</th>
+                      <th>Days used</th>
+                      <th>Balance</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td>Anual Leave</td>
+                      <td>21</td>
+                      <td>6</td>
+                      <td>15</td>
+                    </tr>
+                    <tr>
+                      <td>Compassionate leave</td>
+                      <td>21</td>
+                      <td>6</td>
+                      <td>15</td>
+                    </tr>
+                    <tr>
+                      <td>Sick leave</td>
+                      <td>21</td>
+                      <td>6</td>
+                      <td>15</td>
+                    </tr>
+
+                    
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          
+        
+
+
+        
+        <!-- /.container-fluid -->
+  <!-- Bootstrap core JavaScript-->
+  <script src="./Sanergy_files/jquery.min.js"></script>
+  <script src="./Sanergy_files/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="./Sanergy_files/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="./Sanergy_files/sb-admin-2.min.js"></script>
+
+
+</body></html>
